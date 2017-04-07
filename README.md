@@ -15,15 +15,15 @@ FileManagerクラスのラッパークラスFileHelperクラスを作りまし�
 
 |メソッド|説明|サンプル|
 |---|---|---|
-| documentDirPath | Documentsディレクトリのパスを取得する | let dir = helper.documentDirPath()| 
-| cachesDirPath | Cachesディレクトリのパスを取得する | let dir = helper.cachesDirPath() |
-| tmpDirPath | tmpディレクトリのパスを取得する | let dir = helper.tmpDirPath() |
-| hasExistsAtPath | 該当ファイルがあるかチェックする | helper.hasExistsAtPath(path: imagesPath) | 
-| createDirectoryAtPath | 新規ディレクトリを作成する | helper.createDirectoryAtPath(path: imagesPath) |
-| removeDirectoryAtPath | 既存ディレクトリを削除する | helper.removeDirectoryAtPath(path: imagesPath) |
+| documentDirPath | Documentsディレクトリのパスを取得する | let path = helper.documentDirPath()| 
+| cachesDirPath | Cachesディレクトリのパスを取得する | let path = helper.cachesDirPath() |
+| tmpDirPath | tmpディレクトリのパスを取得する | let path = helper.tmpDirPath() |
+| hasExistsAtPath | 該当ファイルがあるかチェックする | helper.hasExistsAtPath(path: path) | 
+| createDirectoryAtPath | 新規ディレクトリを作成する | helper.createDirectoryAtPath(path: path) |
+| removeDirectoryAtPath | 既存ディレクトリを削除する | helper.removeDirectoryAtPath(path: path) |
 | removeAllDerectoryAtPath | ディレクトリをすべて削除する | helper.removeAllDerectoryAtPath(path: helper.documentDirPath()) |
-| saveToFile | 該当ディレクトリにファイルを保存する | helper.saveToFile(path: imagesPath,fileName: "flower.png",data: data!) |
-| findForFileAtPath | 該当ディレクトリ内のファイルを検索する | let files = helper.findForFileAtPath(path: imagesPath) |
+| saveToFile | 該当ディレクトリにファイルを保存する | helper.saveToFile(path: path,fileName: "flower.png",data: data!) |
+| findForFileAtPath | 該当ディレクトリ内のファイルを検索する | let files = helper.findForFileAtPath(path: path) |
 | moveForFileAtPath | 該当ファイルを移動する or 名前の変更を行う | helper.moveForFileAtPath(fromPath: fromPath,toPath: toPath) |
 | copyForFileAtPath | 該当ファイルをコピーする | helper.copyForFileAtPath(fromPath: fromPath, toPath: toPath) |
 
