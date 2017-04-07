@@ -12,7 +12,8 @@
 		BCAF07491E97747C0032DC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAF07471E97747C0032DC9D /* Main.storyboard */; };
 		BCAF074B1E97747C0032DC9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCAF074A1E97747C0032DC9D /* Assets.xcassets */; };
 		BCAF074E1E97747C0032DC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAF074C1E97747C0032DC9D /* LaunchScreen.storyboard */; };
-		BCAF07591E97747C0032DC9D /* ios_foundation_filemanager_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF07581E97747C0032DC9D /* ios_foundation_filemanager_demoTests.swift */; };
+		BCAF07591E97747C0032DC9D /* FileHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF07581E97747C0032DC9D /* FileHelperTests.swift */; };
+		BCAF07641E9774920032DC9D /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF07631E9774920032DC9D /* FileHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,9 @@
 		BCAF074D1E97747C0032DC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCAF074F1E97747C0032DC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCAF07541E97747C0032DC9D /* ios-foundation-filemanager-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-foundation-filemanager-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCAF07581E97747C0032DC9D /* ios_foundation_filemanager_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_foundation_filemanager_demoTests.swift; sourceTree = "<group>"; };
+		BCAF07581E97747C0032DC9D /* FileHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelperTests.swift; sourceTree = "<group>"; };
 		BCAF075A1E97747C0032DC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAF07631E9774920032DC9D /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,10 @@
 		BCAF07421E97747C0032DC9D /* ios-foundation-filemanager-demo */ = {
 			isa = PBXGroup;
 			children = (
-				BCAF07431E97747C0032DC9D /* AppDelegate.swift */,
-				BCAF07451E97747C0032DC9D /* ViewController.swift */,
-				BCAF07471E97747C0032DC9D /* Main.storyboard */,
-				BCAF074A1E97747C0032DC9D /* Assets.xcassets */,
-				BCAF074C1E97747C0032DC9D /* LaunchScreen.storyboard */,
+				BCAF07651E9774E40032DC9D /* Controllers */,
+				BCAF07661E9774EE0032DC9D /* Helpers */,
 				BCAF074F1E97747C0032DC9D /* Info.plist */,
+				BCAF07671E9774F70032DC9D /* Others */,
 			);
 			path = "ios-foundation-filemanager-demo";
 			sourceTree = "<group>";
@@ -90,10 +90,45 @@
 		BCAF07571E97747C0032DC9D /* ios-foundation-filemanager-demoTests */ = {
 			isa = PBXGroup;
 			children = (
-				BCAF07581E97747C0032DC9D /* ios_foundation_filemanager_demoTests.swift */,
+				BCAF07681E9775070032DC9D /* Helpers */,
 				BCAF075A1E97747C0032DC9D /* Info.plist */,
 			);
 			path = "ios-foundation-filemanager-demoTests";
+			sourceTree = "<group>";
+		};
+		BCAF07651E9774E40032DC9D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCAF07451E97747C0032DC9D /* ViewController.swift */,
+				BCAF07471E97747C0032DC9D /* Main.storyboard */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BCAF07661E9774EE0032DC9D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BCAF07631E9774920032DC9D /* FileHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		BCAF07671E9774F70032DC9D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				BCAF07431E97747C0032DC9D /* AppDelegate.swift */,
+				BCAF074A1E97747C0032DC9D /* Assets.xcassets */,
+				BCAF074C1E97747C0032DC9D /* LaunchScreen.storyboard */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		BCAF07681E9775070032DC9D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BCAF07581E97747C0032DC9D /* FileHelperTests.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +236,7 @@
 			files = (
 				BCAF07461E97747C0032DC9D /* ViewController.swift in Sources */,
 				BCAF07441E97747C0032DC9D /* AppDelegate.swift in Sources */,
+				BCAF07641E9774920032DC9D /* FileHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCAF07591E97747C0032DC9D /* ios_foundation_filemanager_demoTests.swift in Sources */,
+				BCAF07591E97747C0032DC9D /* FileHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
