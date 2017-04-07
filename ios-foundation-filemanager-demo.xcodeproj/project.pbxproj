@@ -61,9 +61,9 @@
 		BCAF07371E97747C0032DC9D = {
 			isa = PBXGroup;
 			children = (
+				BCAF07411E97747C0032DC9D /* Products */,
 				BCAF07421E97747C0032DC9D /* ios-foundation-filemanager-demo */,
 				BCAF07571E97747C0032DC9D /* ios-foundation-filemanager-demoTests */,
-				BCAF07411E97747C0032DC9D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,8 +81,8 @@
 			children = (
 				BCAF07651E9774E40032DC9D /* Controllers */,
 				BCAF07661E9774EE0032DC9D /* Helpers */,
-				BCAF074F1E97747C0032DC9D /* Info.plist */,
 				BCAF07671E9774F70032DC9D /* Others */,
+				BCAF074F1E97747C0032DC9D /* Info.plist */,
 			);
 			path = "ios-foundation-filemanager-demo";
 			sourceTree = "<group>";
@@ -99,10 +99,11 @@
 		BCAF07651E9774E40032DC9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BCAF07451E97747C0032DC9D /* ViewController.swift */,
 				BCAF07471E97747C0032DC9D /* Main.storyboard */,
+				BCAF07451E97747C0032DC9D /* ViewController.swift */,
 			);
 			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		BCAF07661E9774EE0032DC9D /* Helpers */ = {
@@ -111,6 +112,7 @@
 				BCAF07631E9774920032DC9D /* FileHelper.swift */,
 			);
 			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		BCAF07671E9774F70032DC9D /* Others */ = {
@@ -121,6 +123,7 @@
 				BCAF074C1E97747C0032DC9D /* LaunchScreen.storyboard */,
 			);
 			name = Others;
+			path = Others;
 			sourceTree = "<group>";
 		};
 		BCAF07681E9775070032DC9D /* Helpers */ = {
@@ -129,6 +132,7 @@
 				BCAF07581E97747C0032DC9D /* FileHelperTests.swift */,
 			);
 			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +269,7 @@
 				BCAF07481E97747C0032DC9D /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		BCAF074C1E97747C0032DC9D /* LaunchScreen.storyboard */ = {
@@ -273,6 +278,7 @@
 				BCAF074D1E97747C0032DC9D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
