@@ -50,8 +50,8 @@ class FileHelperTests: XCTestCase {
         XCTAssertFalse(helper.hasExistsAtPath(path: imagesPath))
     }
     
-    /// 該当のパスが存在するか？
-    /// check : 存在する
+    /// ディレクトリが作詞できるか？
+    /// check : Documents/imagesが存在する
     func testCreateDir() {
         
         helper.createDirectoryAtPath(path: imagesPath)
@@ -59,7 +59,7 @@ class FileHelperTests: XCTestCase {
     }
     
     /// 画像ファイルが保存できるか？
-    /// check : flower.pngがあるか？
+    /// check : Documents/images/flower.pngがあるか？
     func testSaveImageFile() {
         
         //setup
@@ -79,7 +79,7 @@ class FileHelperTests: XCTestCase {
     }
     
     /// 画像ファイルがリネームできるか？
-    /// check : rename.pngがあるか？
+    /// check : Documents/imagesrename.pngがあるか？
     func testRenameFile() {
         
         //setup
@@ -105,7 +105,7 @@ class FileHelperTests: XCTestCase {
     }
     
     /// 画像ファイルがコピーできるか？
-    /// check : flower.png or copy.pngがあるか？
+    /// check : Documents/imagesflower.png or copy.pngがあるか？
     func testCopyFile() {
         
         //setup

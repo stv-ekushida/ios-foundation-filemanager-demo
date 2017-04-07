@@ -125,7 +125,7 @@ final class FileHelper {
         }
     }
     
-    /// 該当ファイルを移動する or 名前のｓ変更を行う
+    /// 該当ファイルを移動する or 名前の変更を行う
     ///
     /// - Parameters:
     ///   - fromPath: 元のファイルパス
