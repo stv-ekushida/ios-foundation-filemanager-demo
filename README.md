@@ -14,7 +14,7 @@ FileManagerは、アプリ内のファイルを操作するクラスです。
 
 |メソッド|説明|サンプル|
 |---|---|---|
-| documentDirPath | Documents（ユーザデータ）ディレクトリのパスを取得する | let dir = helper.documentDirPath().components(separatedBy: "/")| 
+| documentDirPath | Documentsディレクトリのパスを取得する | let dir = helper.documentDirPath().components(separatedBy: "/")| 
 | cachesDirPath | Cachesディレクトリのパスを取得する | let dir = helper.cachesDirPath().components(separatedBy: "/") |
 | tmpDirPath | tmpディレクトリのパスを取得する | let dir = helper.tmpDirPath().components(separatedBy: "/") |
 | hasExistsAtPath | 該当ファイルがあるかチェックする | helper.hasExistsAtPath(path: imagesPath) | 
